@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>E-Shop Website</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="shop, shopping, online shopping, eshop, clothing stores, online shop, shopping online, shop online, buy online" name="keywords">
+    <meta content="Discover a wide range of quality products from fashion to gadgets. Shop conveniently online and find exactly what you need. Secure payments and reliable delivery. Explore now!" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row bg-secondary py-1 px-xl-5">
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="d-inline-flex align-items-center h-100">
+                    <a class="text-body mr-3" href="about.html">About</a>
+                    <a class="text-body mr-3" href="contact.html">Contact</a>
+                    <a class="text-body mr-3" href="help.html">Help</a>
+                    <a class="text-body mr-3" href="FAQs.html">FAQs</a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">My
+                            Account</button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <button class="dropdown-item" type="button">Sign in</button>
+                            <button class="dropdown-item" type="button">Sign up</button>
+                        </div>
+                    </div>
+                    <div class="btn-group mx-2">
+                        <button type="button" class="btn btn-sm btn-light dropdown-toggle"
+                            data-toggle="dropdown">USD</button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <button class="dropdown-item" type="button">EUR</button>
+                            <button class="dropdown-item" type="button">GBP</button>
+                            <button class="dropdown-item" type="button">CAD</button>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-light dropdown-toggle"
+                            data-toggle="dropdown">EN</button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <button class="dropdown-item" type="button">FR</button>
+                            <button class="dropdown-item" type="button">AR</button>
+                            <button class="dropdown-item" type="button">RU</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-inline-flex align-items-center d-block d-lg-none">
+                    <a href="" class="btn px-0 ml-2">
+                        <i class="fas fa-heart text-dark"></i>
+                        <span class="badge text-dark border border-dark rounded-circle"
+                            style="padding-bottom: 2px;">0</span>
+                    </a>
+                    <a href="" class="btn px-0 ml-2">
+                        <i class="fas fa-shopping-cart text-dark"></i>
+                        <span class="badge text-dark border border-dark rounded-circle"
+                            style="padding-bottom: 2px;">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
+            <div class="col-lg-4">
+                <a href="index.html" class="text-decoration-none">
+                    <span class="h1 text-uppercase text-primary bg-dark px-2">E</span>
+                    <span class="h1 text-uppercase text-dark bg-primary px-2 ml-n1">Shop</span>
+                </a>
+            </div>
+            <div class="col-lg-4 col-6 text-left">
+                <form action="">
+                    <div class="input-group">
+                        <input id="serch" type="text" class="form-control srch" placeholder="Search for products">
+                        <div id="serchbut" class="input-group-append">
+                            <span class="input-group-text bg-transparent text-primary">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-4 col-6 text-right">
+                <p class="m-0">Customer Service</p>
+                <h5 class="m-0">+374 xxx xxx</h5>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-dark mb-30">
+        <div class="row px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <a id="open_category" class="btn d-flex align-items-center justify-content-between bg-primary w-100"
+                    data-toggle="collapse" href="#navbar-vertical" style="height: 65px; padding: 0 30px;">
+                    <h6 class="text-dark m-0"><i class="fa fa-bars mr-2"></i>Categories</h6>
+                    <i class="fa fa-angle-down text-dark"></i>
+                </a>
+                <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 bg-light"
+                    id="navbar-vertical" style="width: calc(100% - 30px); z-index: 999;">
+                    <div id="categories" class="navbar-nav w-100">
+                    </div>
+                </nav>
+            </div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-0">
+                    <a href="" class="text-decoration-none d-block d-lg-none">
+                        <span class="h1 text-uppercase text-dark bg-light px-2">E</span>
+                        <span class="h1 text-uppercase text-light bg-primary px-2 ml-n1">Shop</span>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="shop.html" class="nav-item nav-link">Shop</a>
+                            <a href="detail.html" class="nav-item nav-link">Shop Detail</a>
+                            <a href="Favorits.html" class="nav-item nav-link">Favorits</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages <i
+                                        class="fa fa-angle-down mt-1"></i></a>
+                                <div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
+                                    <a href="cart.html" class="dropdown-item">Shopping Cart</a>
+                                    <a href="checkout.html" class="dropdown-item">Checkout</a>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                        <div class="navbar-nav ml-auto py-0 d-none d-lg-block">
+                            <a href="" class="btn px-0">
+                                <i class="fas fa-heart text-primary"></i>
+                                <span class="badge text-secondary border border-secondary rounded-circle"
+                                    style="padding-bottom: 2px;">0</span>
+                            </a>
+                            <a href="cart.html" class="btn px-0 ml-3">
+                                <i class="fas fa-shopping-cart text-primary"></i>
+                                <span class="badge text-secondary border border-secondary rounded-circle"
+                                    style="padding-bottom: 2px;">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Breadcrumb Start -->
+    <div class="container-fluid">
+        <div class="row px-xl-5">
+            <div class="col-12">
+                <nav class="breadcrumb bg-light mb-30">
+                    <a class="breadcrumb-item text-dark" href="index.html">Home</a>
+                    <a class="breadcrumb-item text-dark" href="#">Favorits</a>
+                    <span class="breadcrumb-item active">Favorits List</span>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+
+    <!-- Shop Start -->
+    <div class="container-fluid">
+        <div class="row px-xl-5">
+            <!-- Shop Sidebar Start -->
+            <div class="col-lg-3 col-md-4">
+                <!-- Price Start -->
+                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Filter
+                        by price</span></h5>
+                <div class="bg-light p-4 mb-30">
+                    <form>
+                        <div
+                            class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" checked id="price-all">
+                            <label class="custom-control-label" for="price-all">All Price</label>
+                            <span class="badge border font-weight-normal">1000</span>
+                        </div>
+                        <div
+                            class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="price-1">
+                            <label class="custom-control-label" for="price-1">$0 - $100</label>
+                            <span class="badge border font-weight-normal">150</span>
+                        </div>
+                        <div
+                            class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="price-2">
+                            <label class="custom-control-label" for="price-2">$100 - $200</label>
+                            <span class="badge border font-weight-normal">295</span>
+                        </div>
+                        <div
+                            class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="price-3">
+                            <label class="custom-control-label" for="price-3">$200 - $300</label>
+                            <span class="badge border font-weight-normal">246</span>
+                        </div>
+                        <div
+                            class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="price-4">
+                            <label class="custom-control-label" for="price-4">$300 - $400</label>
+                            <span class="badge border font-weight-normal">145</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
+                            <input type="checkbox" class="custom-control-input" id="price-5">
+                            <label class="custom-control-label" for="price-5">$400 - $500</label>
+                            <span class="badge border font-weight-normal">168</span>
+                        </div>
+                    </form>
+                </div>
+                <!-- Price End -->
+
+                <!-- Color Start -->
+                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Filter
+                        by color</span></h5>
+                <div class="bg-light p-4 mb-30">
+                    <form>
+                        <div
+                            class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" checked id="color-all">
+                            <label class="custom-control-label" for="price-all">All Color</label>
+                            <span class="badge border font-weight-normal">1000</span>
+                        </div>
+                        <div
+                            class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="color-1">
+                            <label class="custom-control-label" for="color-1">Black</label>
+                            <span class="badge border font-weight-normal">150</span>
+                        </div>
+                        <div
+                            class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="color-2">
+                            <label class="custom-control-label" for="color-2">White</label>
+                            <span class="badge border font-weight-normal">295</span>
+                        </div>
+                        <div
+                            class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="color-3">
+                            <label class="custom-control-label" for="color-3">Red</label>
+                            <span class="badge border font-weight-normal">246</span>
+                        </div>
+                        <div
+                            class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="color-4">
+                            <label class="custom-control-label" for="color-4">Blue</label>
+                            <span class="badge border font-weight-normal">145</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
+                            <input type="checkbox" class="custom-control-input" id="color-5">
+                            <label class="custom-control-label" for="color-5">Green</label>
+                            <span class="badge border font-weight-normal">168</span>
+                        </div>
+                    </form>
+                </div>
+                <!-- Color End -->
+
+                <!-- Size Start -->
+                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Filter
+                        by size</span></h5>
+                <div class="bg-light p-4 mb-30">
+                    <form>
+                        <div
+                            class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" checked id="size-all">
+                            <label class="custom-control-label" for="size-all">All Size</label>
+                            <span class="badge border font-weight-normal">1000</span>
+                        </div>
+                        <div
+                            class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="size-1">
+                            <label class="custom-control-label" for="size-1">XS</label>
+                            <span class="badge border font-weight-normal">150</span>
+                        </div>
+                        <div
+                            class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="size-2">
+                            <label class="custom-control-label" for="size-2">S</label>
+                            <span class="badge border font-weight-normal">295</span>
+                        </div>
+                        <div
+                            class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="size-3">
+                            <label class="custom-control-label" for="size-3">M</label>
+                            <span class="badge border font-weight-normal">246</span>
+                        </div>
+                        <div
+                            class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="size-4">
+                            <label class="custom-control-label" for="size-4">L</label>
+                            <span class="badge border font-weight-normal">145</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
+                            <input type="checkbox" class="custom-control-input" id="size-5">
+                            <label class="custom-control-label" for="size-5">XL</label>
+                            <span class="badge border font-weight-normal">168</span>
+                        </div>
+                    </form>
+                </div>
+                <!-- Size End -->
+            </div>
+            <!-- Shop Sidebar End -->
+
+
+            <!-- Shop Product Start -->
+            <div class="col-lg-9 col-md-8">
+                <div id="prdzdiv" class="row pb-3">
+                    <div class="col-12 pb-1">
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+                            <div>
+                                <button class="btn btn-sm btn-light"><i class="fa fa-th-large"></i></button>
+                                <button class="btn btn-sm btn-light ml-2"><i class="fa fa-bars"></i></button>
+                            </div>
+                            <div class="ml-2">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-light dropdown-toggle"
+                                        data-toggle="dropdown">Sorting</button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#">Latest</a>
+                                        <a class="dropdown-item" href="#">Popularity</a>
+                                        <a class="dropdown-item" href="#">Best Rating</a>
+                                    </div>
+                                </div>
+                                <div class="btn-group ml-2">
+                                    <button type="button" class="btn btn-sm btn-light dropdown-toggle"
+                                        data-toggle="dropdown">Showing</button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#">10</a>
+                                        <a class="dropdown-item" href="#">20</a>
+                                        <a class="dropdown-item" href="#">30</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="pgsnav" class="col-12">
+                        <nav>
+                            <ul id="ulpg" class="pagination justify-content-center">
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- Shop Product End -->
+        </div>
+    </div>
+    <!-- Shop End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-secondary mt-5 pt-5">
+        <div class="row px-xl-5 pt-5">
+            <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                <h5 class="text-secondary text-uppercase mb-4">Get In Touch</h5>
+                <p class="mb-4">Don't miss out on these exciting updates! Start shopping now and enjoy the best of what we have to offer.
+                    Happy shopping!
+                    Your Online Shop Team</p>
+                    <a class="mb-2" href="https://www.google.com/maps/place/Gyumri+Technology+Center/@40.7849731,43.8369579,15z/data=!4m14!1m7!3m6!1s0x4041fbed15cdb0cb:0xea64b7ee5515c5de!2sGyumri+Technology+Center!8m2!3d40.7865415!4d43.8383222!16s%2Fg%2F1tdvyct_!3m5!1s0x4041fbed15cdb0cb:0xea64b7ee5515c5de!8m2!3d40.7865415!4d43.8383222!16s%2Fg%2F1tdvyct_?entry=ttu" target="_blank"><i class="fa fa-map-marker-alt text-primary mr-3"></i>ARMENIA GYUMRI GTC</a><br>
+                    <a class="mb-2" href="https://mail.google.com/" target="_blank">  <i class="fa fa-envelope text-primary mr-3" ></i>email@example.com</a>
+                    <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+374 xxx xxx</p>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-secondary text-uppercase mb-4">Quick Shop</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-secondary mb-2" href="index.html" target="_blank"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-secondary mb-2" href="shop.html" target="_blank"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
+                            <a class="text-secondary mb-2" href="detail.html" target="_blank"><i class="fa fa-angle-right mr-2"></i>Shop
+                                Detail</a>
+                            <a class="text-secondary mb-2" href="Favorits.html" target="_blank"><i class="fa fa-angle-right mr-2"></i>Shopping
+                                Cart</a>
+                            <a class="text-secondary mb-2" href="checkout.html" target="_blank"><i class="fa fa-angle-right mr-2"></i>Checkout</a>
+                        <!--    <a class="text-secondary" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a> -->
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-secondary text-uppercase mb-4">My Account</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                           <!-- <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shop
+                                Detail</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shopping
+                                Cart</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Checkout</a> -->
+                            <a class="text-secondary" href="contact.html" target="_blank"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                            <a class="text-secondary" href="help.html" target="_blank"><i class="fa fa-angle-right mr-2"></i> Help</a>
+                            <a class="text-secondary" href="about.html" target="_blank"><i class="fa fa-angle-right mr-2"></i>About</a>
+                            <a class="text-secondary" href="FAQs.html" target="_blank"><i class="fa fa-angle-right mr-2"></i>FAQs</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-secondary text-uppercase mb-4">feedback</h5>
+                        <p>We value your opinion!
+                          If you have suggestions, compliments, or concerns, we want to hear from you.</p>
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Your Email Address">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary">Sign Up</button>
+                                </div>
+                            </div>
+                        </form>
+                        <h6 class="text-secondary text-uppercase mt-4 mb-3">Follow Us</h6>
+                        <div class="d-flex">
+                            <a class="btn btn-primary btn-square mr-2" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-primary btn-square mr-2" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-square mr-2" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-primary btn-square" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row border-top mx-xl-5 py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
+            <div class="col-md-6 px-xl-0">
+                &copy; <a class="text-primary" href="#">Domain</a>.  copyright are protected by law
+                <!-- <a class="text-primary" href="https://web.telegram.org/k/">Մանվել</a>
+                <a class="text-primary" href="https://htmlcodex.com">  Ռիմա</a> -->
+            </p>
+            </div>
+            <div class="col-md-6 px-xl-0 text-center text-md-right">
+                <a href="https://pst.net/?utm_source=adwords_bestgeo_affi&utm_source=adwords&utm_term=visa+card+online+payment&utm_campaign=&utm_medium=ppc&hsa_acc=7753264562&hsa_cam=19652726351&hsa_grp=146676595820&hsa_ad=647273159172&hsa_src=g&hsa_tgt=kwd-298898406935&hsa_kw=visa+card+online+payment&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjw-7OlBhB8EiwAnoOEk4hMAdF9Afygr7DkOLM4pB9P4oqg4sLzp5wwx5NCyirR54c2mv2oyhoCja4QAvD_BwE" target="_blank"><img class="img-fluid" src="https://www.freepnglogos.com/uploads/visa-card-logo-9.png" alt="VisaCard" height="50px" width="50px"></a> 
+                <a href="https://www.mastercard.ru/ru-ru.html" target="_blank"><img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/1280px-MasterCard_Logo.svg.png" alt="MasterCard" height="50px" width="50px"></a> 
+                <a href="https://www.paypal.com/us/digital-wallet/manage-money/paypal-debit-card" target="_blank"><img class="img-fluid" src="https://www.freepnglogos.com/uploads/paypal-logo-png-16.png" alt="PayPal" height="50px" width="50px"></a>
+                <a href="https://ameriabank.am/en/personal/cards/typesofcards/paymentcards" target="_blank"><img class="img-fluid" src="https://ameriabank.am/Portals/0/Logo/Ameriabank%20green.svg?ver=2020-06-23-132200-427" alt="AmericaBank" height="50px" width="50px"></a>
+                <a href="https://idbank.am/en/cards/" target="_blank"><img class="img-fluid" src="data:image/png;base64,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" alt="IDbank" height="50px" width="50px"></a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/category.js"></script>
+    <script src="js/Favorits.js"></script>
+    <!-- <script src="./js/page.js"></script> -->
+</body>
+
+</html>
